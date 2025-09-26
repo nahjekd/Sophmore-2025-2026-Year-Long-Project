@@ -1,22 +1,51 @@
 <! DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1. 0">
-      <title>Palentology in Kentuckys</title>
-        <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Palentology in Kentuckys</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
 
-<body>
-  <section class="header">
-    <nav>
-      <a href="index.html"><img src="logo"></a>
-        <div class="nav-links">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About">About</a></li>
-            <li><a href="">Fossils Found</a></li>
-            <li><a href="">Lastest</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </div>
-    </nav>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/2936/2936483.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick= "hideMenu()"></i>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Species</a></li>
+                            <li><a href="">Big Bones</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    <i class="fa fa-bars"  onclick= "showMenu()"></i>
+                </div>
+            </nav>
+            <div class="text-box">
+                <h1>Popular fossil sites in Kentucky!</h1>
+                <p>
+                    TBD
+                </p>
+                
+                <a href="" class="hpb">Visit our website to know more!</a>
+            </div>
+        </section>
+        
+<!-------JavaScript for toggling menu-------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0"
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>
