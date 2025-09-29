@@ -87,8 +87,7 @@ nav .fa{
     display: none;
 }
 @media(max-width: 600px) {
-    html, body {
-        overflow-x: hidden;
+
     }
     .text-box h1{
         font-size: 20px;
