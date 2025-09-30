@@ -1,57 +1,164 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>PaleonKy | About Us</title>
-            <link rel="stylesheet" href="style.css">
-            
-        <!------allows us to use custom fonts------->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <!------custom fonts we are using------->   
-            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        
-        <!------CSS button codes------->    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <title>Berenice</title>
+<style>
+    .container {
+        max-width: 900px; 
+        margin: 0 auto; 
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .image-paragraph {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin: 20px 0;
+    }
 
-    </head>
+    .image-paragraph-reverse {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin: 20px 0;
+        flex-direction: row-reverse; 
+    }
 
-    <body>
-        <section class="header">
-            <nav>
-                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/2936/2936483.png"></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick= "hideMenu()"></i>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">About</a></li>
-                            <li><a href="species.html">Species</a></li>
-                            <li><a href="big-bones.html">Big Bones</a></li>
-                            <li><a href="contact-us.html">Contact</a></li>
-                        </ul>
-                </div>
-                <i class="fa fa-bars" onclick= "showMenu()"></i>
-            </nav>
-            <div class="text-box">
-                <h1>About Us!</h1>
-                <p>
-                    TBD
-                </p>
+    .image-paragraph img, .image-paragraph-reverse img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .image-paragraph p, .image-paragraph-reverse p {
+        max-width: 600px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+.image-paragraph img:not(.small-img),
+.image-paragraph-reverse img:not(.small-img) {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    align-self: center;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    @media (max-width: 600px) {
+        .image-paragraph, .image-paragraph-reverse {
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-paragraph p, .image-paragraph-reverse p {
+            max-width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+
+    <h1 style="text-align:center;">Berenice</h1>
+
+    <div class="image-paragraph">
+        <img src="https://snipboard.io/BDCqln.jpg" alt="Character Image">
+        <p>
+        Berenice is a character in the webtoon <i>"Nevermore"</i>, she isn't really shown much as of the current story. However she is in the group called the misfits, which is made up of 5 people that are usually causing problems in their class or school. Breaking rules they are supposed to because it causes the dean's problems and she doesn't like them.
+        </p>
+    </div>
+
+    <h2 style="text-align:center;">Original story</h2>
+    <div class="image-paragraph-reverse">
+        <a href = "https://poestories.com/read/berenice">
+        <img src="https://snipboard.io/9J7Zlp.jpg" alt="Character Image"></a>
+        <p>
+            In her original story by Edgar Allan Poe, Bernice is wedded with her cousin who tends to have a fixation on certain things while she has an illness where her body breaks down. One day he sees her teeth and has thoughts of pulling them out, later on she dies and all we read that he goes to her body and pulls out her teeth. The next day one of the servants said that her grave had been disturbed and that she was still alive. Next to him (the narrator) was a shovel with a box of 32 of her teeth.
+        </p>
+    </div>
+
+        <h2 style="text-align:center;">Designs</h2>
+        <h3 style="text-align:center;">School Uniform</h3>    
+            <div class="image-paragraph">
+
+                <img src= "https://snipboard.io/rT6tKl.jpg" alt="Character Image">
+                <p>She has dark skin, short curly hair, pearl earrings, with thick black eyebrows, her edges done, with a grey dress covered by a short black jacket.</p>
             </div>
-        </section>
+            <h3 style="text-align:center;">Spectre (Strigoi)</h3>
+            <div class="image-paragraph-reverse">
+               
+                <img src= "https://snipboard.io/DnE1IO.jpg" alt="Character Image">
+                <p>In her spectre form called the Strigoi, Berenice becomes a vampire, she turns red, with big wings instead of arms, and multiple mouths across her body. She wears a black dress with marbles on the end, black fishnets, short curly hair with pearl necklaces on top, and black wings</p>
+            </div>
+        <h2 style="text-align:center;">Her Death</h2>
+            <div class="image-paragraph">
+                <img src= "https://snipboard.io/XsQCRF.jpg" alt="Character Image">
+                <p>In her backstory, berenice is dressed up nicely, looking seemingly drunk, she darts in to the road and a car comes through crashing into her, killing her</p>
+            </div>
+            
+               <h2 style = "text-align:center;">Character Traits</h2>
+            <div class="image-paragraph-reverse">
+            <img src="https://snipboard.io/ubkt1X.jpg" alt="Character Image">
+            <p>Berenice is a very sociable person, she's not afraid to speak out or talk to anyone about anything. She also is very reliable when it comes down to it, everyone can always rely on her to do her part. Also very impulsive and mischievous, she acts without thinking and sometimes can lead her into trouble, she never thinks about the consequences and does anything she enjoys doing.</p>
         
-<!-------JavaScript for toggling menu-------->
+            </div>
+            <h2 style = "text-align:center;">Character development</h2>
+            <div class="image-paragraph">
+            <img src="https://snipboard.io/zQX2FL.jpg" alt="Character Image">
+            <p>Unfortunately, so far in the story Berenice hasn't had much character development.</p>
         
-        <script>
-            var navLinks= document.getElementById("navLinks");
-            function showMenu() {
-                navLinks.style.right = "0";
-            }
-            function hideMenu() {
-                navLinks.style.right = "-200px";
-            }
-        </script>
-    </body>
+            </div>
+            
+
+            <h2 style = "text-align:center;">Introduction</h2>
+            <div class="image-paragraph-reverse">
+                <img src="https://snipboard.io/zQIDob.jpg" alt= "Character Image">
+                <p>In the story, Berenice is introduced after the maze exam at the end of the exam in episode 31 however we don't actually get an introduction until the episode after they tell us that she is astounded by how Lenore got through the maze without getting her spectre yet. After becoming friends with Lenore, Duke, and Pluto, Berenice and Eulalie, her friend before meeting them, start becoming great friends. Then the entire groups roams the part of the school they are not supposed to and form a base within the forbidden wing</p>
+            </div>
+            
+            <h2 style="text-align:center;">Spectre Abilities</h2>
+            <div class="image-paragraph">
+                <div>
+                    <h3 style="text-align:center;">Intoxication</h3> 
+                    <img src ="https://snipboard.io/VbtFWK.jpg" alt="Small Image" class="small-img">
+                </div>
+                    <p>
+                    Berenice can make people drunk by biting them.    
+                    </p>
+                    
+            </div>
+            
+             <div class="image-paragraph">
+                 <div>
+                 <h3 style="text-align:center;">Teeth</h3>
+                    <img src ="https://snipboard.io/V4iGvh.jpg" alt="Small Image" class="small-img">
+                    </div>
+                    <p>
+                  Berenice's Spectre has multiple mouths all over her body with sharp fangs. The mouths can also bite on their own to nearby objects or people
+                    </p>
+            </div>
+            
+             <div class="image-paragraph">
+                 <div>
+                     <h3 style="text-align:center;">Bloodlust</h3>
+                    <img src ="https://snipboard.io/4pJWy2.jpg" alt="Small Image" class="small-img">
+                    </div>
+                    <p>
+                    Not exactly stated to be the bloodlust power however she does seem to be bloodthirsty while attacking Will in the Manor arch
+                    </p>
+            </div>
+            
+</body>
 </html>
