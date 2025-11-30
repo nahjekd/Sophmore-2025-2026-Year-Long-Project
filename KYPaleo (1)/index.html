@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paleontology in Kentucky</title>
+
+  <!-- Global CSS (shared by all pages) -->
+  <link rel="stylesheet" href="css/global.css">
+
+  <!-- Homepage-specific CSS -->
+  <link rel="stylesheet" href="css/home.css">
+
+  <!-- Mobile styles (shared by all pages) -->
+  <link rel="stylesheet" href="css/mobile.css">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & FontAwesome for buttons/icons -->
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- top bar stuff -->
+  <section class="header home-header">
+    <nav>
+      <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/2936/2936483.png" alt="Fossil Icon"></a>
+
+      <!-- Navigation -->
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="species.html">Species</a></li>
+          <li><a href="big-bones.html">Big Bones</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Popular Fossil Sites in Kentucky!</h1>
+      <p>Discover ancient life and explore Kentucky’s prehistoric past.</p>
+      <a href="species.html" class="hero-btn">View Fossil Species</a>
+    </div>
+  </section>
+
+  <!-- JavaScript for mobile -->
+    <script src="js/script.js"></script>
+    </body>
+
+</body>
+</html>
