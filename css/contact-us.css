@@ -45,15 +45,20 @@
   line-height: 1.6;
   text-align: left;
 }
-.contact-container h2 {
+.contact-container h1 {
   font-size: 2rem;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
+}
+.contact-container h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: left;
 }
 .contact-container p {
   margin-bottom: 20px;
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 /* Navigational bar for big bones page */
