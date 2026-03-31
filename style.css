@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+:root {
+    --soft-black: #121212;
+    --soft-black-2: #1f1f1f;
+    --soft-black-3: #0e0e0e;
+    --soft-white: #f5f5f5;
+    --accent-red: #f44336;
+}
+
+/* Banner */
+.banner {
+    height: 52vh;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+                url(speciesbg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+.banner .banner-text {
+    position: relative;
+    transform: none;
+    text-align: center;
+    color: var(--soft-white);
+    width: 90%;
+}
+.banner .banner-text h1 {
+    font-size: 3rem !important;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.banner .banner-text p {
+    font-size: 1.2rem !important;
+    line-height: 1.4;
+}
+
+/* Navigation bar css */
+.navbar {
+    background-color: var(--soft-black-2);
+    position: relative;  
+    z-index: 5;
+    border-bottom: 1px solid var(--soft-black-3);
+}
+
+.navbar ul {
+    margin: 0px;
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    gap: 0 1.25rem;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover { 
+    background-color: var(--soft-black-3);
+}
+
+/* Nav bar animation */
+.navbar ul li {
+    position: relative;
+}
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--accent-red);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Text/header css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Sidebar CSS */
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 23%;
+    background-color: var(--soft-black-2);
+    padding: 10px;
+    color: var(--soft-white);
+}
+
+/* Sidebar link boxes */
+.sidebar .side-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.sidebar .link-box {
+    display: block;
+    background: var(--soft-black);
+    color: var(--soft-white);
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 0;
+    margin: 0 -10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: background 0.18s ease;
+}
+.sidebar .link-box:hover,
+.sidebar .link-box:focus {
+    background: var(--soft-black-3);
+    transform: none;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+    color: var(--soft-black-3);
+    border-left: 1px solid var(--soft-black-3);
+}
+
+.content, .content * {
+    color: #2f2f2f;
+}
+/* Main section CSS */
+main {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.02);
+}
+
+/* Fossil image container */
+.fossil-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.fossil-image-container img {
+    max-width: 95%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+label {
+    font-weight: bold;
+    color: #2f2f2f;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+/* Footer CSS */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: var(--soft-black-2);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 0px;
+}
