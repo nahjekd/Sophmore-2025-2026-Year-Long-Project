@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,60 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Paleontology in Kentucky</title>
 
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="css/global.css">
-  <!-- About page specific CSS -->
-  <link rel="stylesheet" href="css/contact-us.css">
-  <!-- Mobile CSS -->
-  <link rel="stylesheet" href="css/mobile.css">
-  <!-- Google Fonts & FontAwesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!--Navigational bar -->
-  <nav class="navbar">
-    </a>
-
-    <div class="nav-links" id="navLinks">
-      <i class="fa fa-times" onclick="hideMenu()"></i>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="species.html">Species</a></li>
-        <li><a href="big-bones.html" >Big Bones</a></li>
-        <li><a href="contact-us.html" class="active">Contact</a></li>
-      </ul>
-    </div>
-
-    <i class="fa fa-bars" onclick="showMenu()"></i>
-  </nav>
-
-  <!-- Banner -->
-  <section class="contact-banner">
+  <section class="banner">
     <div class="banner-text">
       <h1>Contact Us</h1>
       <p>Tell us about sites you want us to explore or of any mistakes we may have made!</p>
     </div>
   </section>
 
-  <section class="contact-content">
-    <div class="contact-container">
-    <h3>Contact Information</h3>
-    </div>
-  </section>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About</a></li>
+      <li><a href="species.html">Species</a></li>
+      <li><a href="big-bones.html">Big Bones</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section class="contact-content">
-    <div class="contact-container">
-   <p>Business Email: <a href = "malito:kypaleo@outlook.com">Kypaleo@outlook.com</a>  </p>
-    <p>Joey Seibel: Phone # </p>
-    <p>Nahje Dupree:  Phone # </p>
-    
-    </div>
-  </section>
+  <div class="layout">
+    <main class="content">
+      <section>
+        <h1>Contact Information</h1>
+        <p>Business Email: <a href="mailto:kypaleo@outlook.com">Kypaleo@outlook.com</a></p>
+        <p>Joey Seibel: Phone #</p>
+        <p>Nahje Dupree: Phone #</p>
+      </section>
 
-  <!-- Java for mobile -->
-  <script src="js/script.js"></script>
+      <section>
+        <h2>Send us a Message</h2>
+        <form action="mailto:kypaleo@outlook.com" method="POST" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Species Page. All rights reserved.</p>
+  </footer>
 </body>
 </html>
