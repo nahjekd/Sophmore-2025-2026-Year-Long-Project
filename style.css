@@ -102,6 +102,8 @@ body {
 /* Sidebar CSS */
 .layout {
     display: flex;
+    height: 70vh;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -109,6 +111,7 @@ body {
     background-color: var(--soft-black-2);
     padding: 10px;
     color: var(--soft-white);
+    overflow-y: auto;
 }
 
 /* Sidebar link boxes */
@@ -138,9 +141,10 @@ body {
 
 .content {
     flex: 1;
-    padding: 10px;
+    padding: 100px;
     color: var(--soft-black-3);
     border-left: 1px solid var(--soft-black-3);
+    overflow-y: auto;
 }
 
 .content, .content * {
@@ -148,7 +152,7 @@ body {
 }
 /* Main section CSS */
 main {
-    padding: 10px;
+    padding: 60px;
     background-color: rgba(255,255,255,0.02);
 }
 
@@ -159,7 +163,7 @@ main {
 }
 
 .fossil-image-container img {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -203,6 +207,27 @@ button {
 
 button:hover {
     background-color: #d32f2f;
+}
+
+/* Form Status Messages */
+#form-status {
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: none;
+}
+
+#form-status.form-success {
+    display: block;
+    background-color: #4caf50;
+    color: white;
+}
+
+#form-status.form-error {
+    display: block;
+    background-color: #f44336;
+    color: white;
 }
 
 /* Footer CSS */
