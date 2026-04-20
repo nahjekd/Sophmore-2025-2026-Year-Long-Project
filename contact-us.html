@@ -81,15 +81,15 @@
         });
 
         if (response.ok) {
-          statusDiv.textContent = '✓ Message sent successfully! We\'ll get back to you soon.';
+          statusDiv.textContent = 'Message sent successfully! We\'ll get back to you soon.';
           statusDiv.className = 'form-success';
           form.reset();
         } else {
-          statusDiv.textContent = '✗ Something went wrong. Please try again.';
+          statusDiv.textContent = 'Something went wrong. Please try again.';
           statusDiv.className = 'form-error';
         }
       } catch (error) {
-        statusDiv.textContent = '✗ Error sending message. Please try again later.';
+        statusDiv.textContent = 'Error sending message. Please try again later.';
         statusDiv.className = 'form-error';
       } finally {
         submitBtn.disabled = false;
