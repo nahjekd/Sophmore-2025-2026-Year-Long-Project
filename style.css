@@ -13,13 +13,11 @@
     --accent-red: #f44336;
 }
 
-/* Banner */
 .banner {
-    height: 52vh;
-    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
-                url(speciesbg.png);
+    height: 35vh;
     background-position: center;
     background-size: cover;
+    background-attachment: scroll;
     position: relative;
     z-index: 10;
     display: flex;
@@ -30,6 +28,7 @@
     padding: 40px 0;
     box-sizing: border-box;
 }
+
 .banner .banner-text {
     position: relative;
     transform: none;
@@ -37,17 +36,18 @@
     color: var(--soft-white);
     width: 90%;
 }
+
 .banner .banner-text h1 {
     font-size: 3rem !important;
     margin-bottom: 10px;
     text-align: center;
 }
+
 .banner .banner-text p {
     font-size: 1.2rem !important;
     line-height: 1.4;
 }
 
-/* Navigation bar css */
 .navbar {
     background-color: var(--soft-black-2);
     position: relative;  
@@ -64,20 +64,21 @@
     align-items: center;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     padding: 12px;
     display: block;
     text-align: center;
 }
+
 .navbar a:hover { 
     background-color: var(--soft-black-3);
 }
 
-/* Nav bar animation */
 .navbar ul li {
     position: relative;
 }
+
 .navbar ul li::after {
     content: '';
     width: 0%;
@@ -87,19 +88,17 @@
     margin: auto;
     transition: 0.5s;
 }
+
 .navbar ul li:hover::after {
     width: 100%;
 }
 
-/* Text/header css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
-/* Sidebar CSS */
 .layout {
     display: flex;
     min-height: 70vh;
@@ -113,12 +112,12 @@ body {
     overflow-y: auto;
 }
 
-/* Sidebar link boxes */
 .sidebar .side-links {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
 }
+
 .sidebar .link-box {
     display: block;
     background: var(--soft-black);
@@ -132,6 +131,7 @@ body {
     text-overflow: ellipsis;
     transition: background 0.18s ease;
 }
+
 .sidebar .link-box:hover,
 .sidebar .link-box:focus {
     background: var(--soft-black-3);
@@ -144,18 +144,18 @@ body {
     color: var(--soft-black-3);
     border-left: 1px solid var(--soft-black-3);
     overflow-y: auto;
+    max-height: calc(100vh - 100px);
 }
 
 .content, .content * {
     color: #2f2f2f;
 }
-/* Main section CSS */
+
 main {
     padding: 60px;
     background-color: rgba(255,255,255,0.02);
 }
 
-/* Fossil image container */
 .fossil-image-container {
     text-align: center;
     margin: 20px 0;
@@ -168,7 +168,6 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Form styles */
 form {
     display: flex;
     flex-direction: column;
@@ -208,7 +207,6 @@ button:hover {
     background-color: #d32f2f;
 }
 
-/* Form Status Messages */
 #form-status {
     margin: 15px 0;
     padding: 12px;
@@ -229,25 +227,7 @@ button:hover {
     color: white;
 }
 
-/* Footer CSS */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 p {
     font-size: 18px;
     line-height: 1.7;
-}
-footer {
-    background-color: var(--soft-black-2);
-    color: var(--soft-white);
-    text-align: center;
-    padding: 0px;
-    margin-top: auto;
 }
